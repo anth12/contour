@@ -1,63 +1,37 @@
 {
-  "name": "cleanarchitecture.webui",
-  "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "echo Starting... && ng serve",
-    "build": "ng build",
-    "build:ssr": "ng run CleanArchitecture.WebUI:server:dev",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
-  },
+  "name": "contour",
+  "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
   "dependencies": {
-    "@angular/animations": "9.0.7",
-    "@angular/common": "9.0.7",
-    "@angular/compiler": "9.0.7",
-    "@angular/core": "9.0.7",
-    "@angular/forms": "9.0.7",
-    "@angular/platform-browser": "9.0.7",
-    "@angular/platform-browser-dynamic": "9.0.7",
-    "@angular/platform-server": "9.0.7",
-    "@angular/router": "9.0.7",
-    "@fortawesome/angular-fontawesome": "^0.5.0",
-    "@fortawesome/fontawesome-svg-core": "^1.2.25",
-    "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@nguniversal/module-map-ngfactory-loader": "8.0.0-rc.1",
-    "aspnet-prerendering": "^3.0.1",
-    "bootstrap": "^4.3.1",
-    "core-js": "^2.6.5",
-    "jquery": "3.5.0",
-    "ngx-bootstrap": "^5.2.0",
-    "oidc-client": "^1.9.0",
-    "popper.js": "^1.14.3",
-    "rxjs": "^6.5.4",
-    "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
+    "core-js": "^3.6.5",
+    "element-ui": "^2.4.5",
+    "register-service-worker": "^1.7.1",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^8.4.2",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.900.7",
-    "@angular/cli": "9.0.7",
-    "@angular/compiler-cli": "9.0.7",
-    "@angular/language-service": "9.0.7",
-    "@types/jasmine": "~3.3.9",
-    "@types/jasminewd2": "~2.0.6",
-    "@types/node": "^12.11.1",
-    "codelyzer": "^5.1.2",
-    "jasmine-core": "~3.3.0",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "^4.4.1",
-    "karma-chrome-launcher": "~2.2.0",
-    "karma-coverage-istanbul-reporter": "~2.0.5",
-    "karma-jasmine": "~2.0.1",
-    "karma-jasmine-html-reporter": "^1.4.0",
-    "typescript": "3.7.5"
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-pwa": "~4.4.0",
+    "@vue/cli-plugin-router": "~4.4.0",
+    "@vue/cli-plugin-typescript": "~4.4.0",
+    "@vue/cli-plugin-vuex": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "typescript": "~3.9.3",
+    "vue-cli-plugin-element": "^1.0.1",
+    "vue-template-compiler": "^2.6.11"
   },
-  "optionalDependencies": {
-    "node-sass": "^4.9.3",
-    "protractor": "~5.4.0",
-    "ts-node": "~5.0.1",
-    "tslint": "~5.9.1"
-  }
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }

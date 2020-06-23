@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+
+    <!-- built files will be auto injected -->
+    
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=AjbzHJEhNwope_Pz-HAX1fMST7PQdPfa71fehgtAiQ2wUqFIDQpf2jP7oY-PlwKL&callback=loadMapScenario' async defer></script>
+    <script>
+      
+function loadMapScenario(){
+  var bounds = Microsoft.Maps.LocationRect.fromLocations(new Microsoft.Maps.Location(54,-3), new Microsoft.Maps.Location(55,-2));
+  window.map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
+      maxBounds: bounds,
+      mapTypeId: Microsoft.Maps.MapTypeId.ordnanceSurvey,
+      zoom: 14,
+      disableStreetside: false,
+      enableHighDpi: true,
+      liteMode: true,
+      //navigationBarMode: Microsoft.Maps.minified,
+      //navigationBarOrientation: Microsoft.Maps.vertical,
+      //showDashboard: false,
+      showLocateMeButton: false,
+      showMapTypeSelector: false
+  });
+  map.entities.push(new Microsoft.Maps.Pushpin(new Microsoft.Maps.Location(54.5,-2.5), { color: '#0f0', draggable: true }));
+}
+</script>
+  </body>
+</html>
